@@ -1,7 +1,8 @@
 # swiftb
 
-An attempt to make Swift syntax checking into a separate plugin, it works when
-bundled with other plugins but not standalone.
+A syntax checker plugin for
+[syntastic](https://github.com/scrooloose/syntastic) to highlight errors in
+Swift code by invoking the Swift compiler.
 
 Note: this is for open-source Swift (as in swift.org) and relies on `swift
 build` to check syntax, for use with Xcode please see the excellent
@@ -12,11 +13,7 @@ as it's more up-to-date.
 
 ## Installation
 
-Copy `syntax_checkers` directory under your `~/.vim/` directory and add the
-following to your `.vimrc`:
+Do a git clone into `bundle` for Pathogen or put `Plugin 'karabatov/swiftb'`
+into your `.vimrc` for Vundle.
 
-```
-let g:syntastic_swift_checkers = ['swiftb']
-```
-
-Restart vim for the change to take effect.
+Run `:SyntasticInfo` on a Swift file, `swiftb` checker should be available.
