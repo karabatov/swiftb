@@ -8,6 +8,7 @@ set cpo&vim
 
 function! SyntaxCheckers_swift_swiftb_IsAvailable() dict
     return 1
+endfunction
 
 function! SyntaxCheckers_swift_swiftb_GetLocList() dict
     let makeprg = 'swift build'
